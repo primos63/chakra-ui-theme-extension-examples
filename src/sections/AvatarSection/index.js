@@ -1,7 +1,7 @@
 import { extendTheme, useTheme } from '@chakra-ui/react'
-import { AvatarTheming } from '../components/AvatarTheming'
-import { Section } from '../components/Section'
-import { AvatarTheme } from '../theme/Avatar'
+import { AvatarTheming } from './AvatarTheming'
+import { AvatarTheme } from '../../theme/Avatar'
+import { Section } from '../../components/Section'
 
 export const AvatarSection = () => (
   <Section

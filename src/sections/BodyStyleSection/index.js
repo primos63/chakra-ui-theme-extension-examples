@@ -1,15 +1,15 @@
 import { Button, VStack } from '@chakra-ui/react'
 import { useState } from 'react'
-import { BodyStyle } from '../components/BodyStyle'
-import { Section } from '../components/Section'
+import { BodyStyle } from './BodyStyle'
+import { Section } from '../../components/Section'
 
 export const BodyStyleSection = () => {
   const [triggered, toggleTriggered] = useState(false)
 
   return (
     <Section
-      heading='Override body color'
-      description='Change the global background and color'
+      heading='Override global styles'
+      description='Change body background/color, heading font size'
     >
       {triggered ? (
         <BodyStyle
@@ -26,6 +26,14 @@ export const BodyStyleSection = () => {
               fontSize: '26px !important',
             },
           }}
+          //
+          // Or with just a simple color
+          //
+          // sx={{ body: { background: "red" } }}
+          //
+          // Or with Chakra colors without regard for
+          // color mode
+          //
           // sx={{
           //     body: {
           //       background: 'blue.900',

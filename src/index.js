@@ -1,27 +1,20 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import { ChakraProvider } from '@chakra-ui/react'
+import { StrictMode } from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-import { BaseTheme } from "./theme/BaseTheme";
-import App from "./App";
+import { BaseTheme } from './theme/BaseTheme'
+import App from './App'
 
-const rootElement = document.getElementById("root");
-
-// const Main = () => {
-//   const [currentTheme, setCurrentTheme] = useState(theme);
-
-//   return (
-//     <ChakraProvider theme={currentTheme}>
-//       <App setTheme={setCurrentTheme} />
-//     </ChakraProvider>
-//   );
-// };
+const rootElement = document.getElementById('root')
 
 ReactDOM.render(
-  <StrictMode>
-    <ChakraProvider theme={BaseTheme}>
-      <App />
-    </ChakraProvider>
-  </StrictMode>,
+  <BrowserRouter>
+    <StrictMode>
+      <ChakraProvider theme={BaseTheme}>
+        <App />
+      </ChakraProvider>
+    </StrictMode>
+  </BrowserRouter>,
   rootElement
-);
+)

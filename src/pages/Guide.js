@@ -42,12 +42,16 @@ export const Guide = () => (
         marginInlineEnd: '0px',
         paddingInlineStart: '2.8em',
       },
-      pre: {
+      'pre, code': {
         borderRadius: '6px',
-        fontSize: '85%',
+        fontSize: '90%',
         lineHeight: '1.45',
         overflow: 'auto',
         my: '1em',
+      },
+      a: {
+        fontWeight: 'semibold',
+        color: useColorModeValue('teal.500', 'teal.200'),
       },
     }}
   >

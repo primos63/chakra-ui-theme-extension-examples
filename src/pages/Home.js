@@ -12,7 +12,9 @@ import {
   ProgressSection,
   SwitchSection,
   TableSection,
+  TabsSection,
   TagSection,
+  ToastSection,
 } from '../sections'
 
 export const Home = () => (
@@ -29,7 +31,9 @@ export const Home = () => (
     <PopoverSection />
     <ProgressSection />
     <SwitchSection />
+    <TabsSection />
     <TagSection />
     <TableSection />
+    <ToastSection />
   </>
 )

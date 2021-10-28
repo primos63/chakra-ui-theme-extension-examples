@@ -26,7 +26,6 @@ export const TabsSection = () => (
           <TabPanel>
             <p>one!</p>
           </TabPanel>
-          s
           <TabPanel>
             <p>two!</p>
           </TabPanel>

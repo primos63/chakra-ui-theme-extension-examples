@@ -8,7 +8,6 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverTrigger,
-  useTheme,
 } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { PopoverTheme } from '../theme/Popover'
@@ -17,7 +16,7 @@ export const PopoverSection = () => (
   <Section
     heading='Popover'
     description='Unstyled content and no popover arrow'
-    theme={extendTheme(PopoverTheme, useTheme())}
+    theme={extendTheme(PopoverTheme)}
   >
     <Flex flexDirection='column' alignItems='center' p={3} mb={40}>
       <Popover variant='unstyled-content'>

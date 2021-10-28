@@ -1,8 +1,8 @@
-import { Box, Flex, Image, Text, useTheme } from '@chakra-ui/react'
+import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 
 export const ImageSection = () => (
-  <Section heading='Image Overlay' theme={useTheme()}>
+  <Section heading='Image Overlay'>
     <Flex flexDirection='column' alignItems='center' justifyContent='center'>
       <Box
         position='relative'

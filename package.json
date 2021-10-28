@@ -9,7 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@chakra-ui/icons": "1.0.15",
-    "@chakra-ui/react": "1.6.9",
+    "@chakra-ui/react": "1.6.10",
     "@emotion/react": "11.4.1",
     "@emotion/styled": "11.3.0",
     "@fontsource/inter": "^4.5.0",

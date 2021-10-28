@@ -2,20 +2,20 @@ export const PopoverTheme = {
   components: {
     Popover: {
       variants: {
-        "unstyled-content": {
+        'unstyled-content': {
           content: {
-            bg: "none",
-            width: "auto",
-            border: "none",
-            borderRadius: "none",
-            boxShadow: "none",
+            bg: 'none',
+            width: 'auto',
+            border: 'none',
+            borderRadius: 'none',
+            boxShadow: 'none',
             _focus: {
-              boxShadow: "none"
-            }
-          }
-        }
+              boxShadow: 'none',
+            },
+          },
+        },
       },
-      defaultProps: {}
-    }
-  }
-};
+      defaultProps: {},
+    },
+  },
+}

@@ -1,10 +1,4 @@
-import {
-  Alert,
-  AlertIcon,
-  extendTheme,
-  Stack,
-  useTheme,
-} from '@chakra-ui/react'
+import { Alert, AlertIcon, extendTheme, Stack } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { AlertTheme } from '../theme/Alert'
 
@@ -12,7 +6,7 @@ export const AlertSection = () => (
   <Section
     heading='Alert'
     description='Custom colors for variants'
-    theme={extendTheme(AlertTheme, useTheme())}
+    theme={extendTheme(AlertTheme)}
   >
     <Stack m={4} spacing={3}>
       <Alert status='error' colorScheme='pink'>

@@ -1,4 +1,4 @@
-import { Box, extendTheme, Input, Select, useTheme } from '@chakra-ui/react'
+import { Box, extendTheme, Input, Select } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { InputTheme } from '../theme/Input'
 import { SelectTheme } from '../theme/Select'
@@ -6,7 +6,7 @@ import { SelectTheme } from '../theme/Select'
 export const InputSelectSection = () => (
   <Section
     heading='Input & Select'
-    theme={extendTheme(InputTheme, SelectTheme, useTheme())}
+    theme={extendTheme(InputTheme, SelectTheme)}
   >
     <Box margin={3}>
       <Input placeholder='Disabled Input' bgColor='gray.600' disabled />

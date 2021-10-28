@@ -1,11 +1,10 @@
-import { AspectRatio, Box, Image, Text, useTheme } from '@chakra-ui/react'
+import { AspectRatio, Box, Image, Text } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 
 export const AspectRatioSection = () => (
   <Section
     heading='Aspect Ratio'
     description='Change objectFit for child image/video'
-    theme={useTheme()}
   >
     <AspectRatio
       m={4}

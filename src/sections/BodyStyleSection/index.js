@@ -13,7 +13,6 @@ export const BodyStyleSection = () => {
     >
       {triggered ? (
         <BodyStyle
-          // sx={{ body: { background: "red" } }}
           sx={{
             body: {
               dark: {

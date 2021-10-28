@@ -1,4 +1,4 @@
-import { mode } from "@chakra-ui/theme-tools";
+import { mode } from '@chakra-ui/theme-tools'
 
 export const SwitchTheme = {
   components: {
@@ -17,31 +17,31 @@ export const SwitchTheme = {
       variants: {
         noFocus: (props) => ({
           track: {
-            bg: mode("gray.200", "gray.500")(props),
-            borderColor: mode("gray.200", "gray.500")(props),
-            borderWidth: "1px",
+            bg: mode('gray.200', 'gray.500')(props),
+            borderColor: mode('gray.200', 'gray.500')(props),
+            borderWidth: '1px',
             _focus: {
-              boxShadow: "none"
+              boxShadow: 'none',
             },
             _checked: {
-              bg: mode("white", "gray.800")(props),
-              borderColor: mode("orange.400", "orange.300")(props)
-            }
+              bg: mode('white', 'gray.800')(props),
+              borderColor: mode('orange.400', 'orange.300')(props),
+            },
           },
           thumb: {
-            bg: mode("gray.300", "gray.600")(props),
+            bg: mode('gray.300', 'gray.600')(props),
             _checked: {
-              bg: mode("orange.400", "orange.300")(props)
-            }
+              bg: mode('orange.400', 'orange.300')(props),
+            },
           },
           defaultProps: {
-            colorScheme: "orange"
-          }
-        })
+            colorScheme: 'orange',
+          },
+        }),
       },
       defaultProps: {
-        variant: "noFocus"
-      }
-    }
-  }
-};
+        variant: 'noFocus',
+      },
+    },
+  },
+}

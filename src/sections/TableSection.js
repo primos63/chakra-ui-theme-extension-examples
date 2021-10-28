@@ -8,7 +8,6 @@ import {
   Th,
   Thead,
   Tr,
-  useTheme,
 } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { TableTheme } from '../theme/Table'
@@ -17,7 +16,7 @@ export const TableSection = () => (
   <Section
     heading='Table'
     description='Variant for custom header color'
-    theme={extendTheme(TableTheme, useTheme())}
+    theme={extendTheme(TableTheme)}
   >
     <Table variant='colorHeader' my={3}>
       <TableCaption>Imperial to metric conversion factors</TableCaption>

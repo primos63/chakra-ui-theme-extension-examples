@@ -1,4 +1,4 @@
-import { Button, extendTheme, Progress, useTheme } from '@chakra-ui/react'
+import { Button, extendTheme, Progress } from '@chakra-ui/react'
 import { useState } from 'react'
 import { Section } from '../components/Section'
 import { ProgressTheme } from '../theme/Progress'
@@ -10,7 +10,7 @@ export const ProgressSection = () => {
     <Section
       heading='Progess'
       description='Multi-color/segment variants'
-      theme={extendTheme(ProgressTheme, useTheme())}
+      theme={extendTheme(ProgressTheme)}
     >
       <Progress
         variant='multiSegment'
